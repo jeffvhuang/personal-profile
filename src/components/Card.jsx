@@ -1,17 +1,33 @@
-import React from 'react'
+import React from 'react';
+import { string, array } from 'prop-types';
+import './card.css'
 
-function Card({ title, imagePath, link, github, description }) {
+Card.propTypes = {
+    title: string,
+    imagePath: string,
+    link: string,
+    github: string,
+    description: string,
+    highlights: array
+}
+
+function Card({ title, imagePath, link, github, description, highlights }) {
     return (
         <div>
-            <a href={link} target="_blank" className="card">
-                <div>
-                    <img className="logo" src={imagePath} alt="Project Image" target="_blank" />
-                </div>
-                <div>
-                    <h4>{title}</h4>
-                    <p>{description}</p>
-                </div>
-            </a>
+            <div className="card">
+                 <a href={link} target="_blank">
+                    <img className="project-image" src={imagePath} alt="Project Image" target="_blank" />
+                    <div>
+                        <h4>{title}</h4>
+                        <p>{description}</p>
+                        {highlights.length > 0 && (
+                            <ul>
+                                {highlights.map((highlight, i) => <li key={i}>{highlight}</li>)}
+                            </ul>
+                        )}
+                    </div>
+                </a>
+            </div>
             <a href={github} target="_blank">
                 <img className="logo" src="../../public/images/GitHub-Mark-64px.png" alt="LinkedIn Logo" />
                 <p>Source Code</p>

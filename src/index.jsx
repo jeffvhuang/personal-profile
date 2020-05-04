@@ -7,7 +7,7 @@ import Card from './components/Card';
 const projects = [
     {
         title: 'Lets Chat',
-        imagePath: '',
+        imagePath: '../public/images/chat-bubbles.jpg',
         link: 'https://jeffvh-lets-chat.herokuapp.com/',
         github: 'https://github.com/jeffvhuang/lets-chat',
         description: 'A real time chat application',
@@ -15,7 +15,7 @@ const projects = [
     },
     {
         title: 'Task Manager API',
-        imagePath: '',
+        imagePath: '../public/images/project-management.jpg',
         link: 'https://jeffvh-task-manager.herokuapp.com',
         github: 'https://github.com/jeffvhuang/task-manager',
         description: 'An API for task management',
@@ -23,7 +23,7 @@ const projects = [
     },
     {
         title: 'Recaura',
-        imagePath: '',
+        imagePath: '../public/images/digital-hand.jpg',
         link: '',
         github: 'https://github.com/jeffvhuang/Recaura',
         description: 'Physiotherapy management software',
@@ -37,7 +37,7 @@ class App extends React.Component {
             <>
                 <Header />
                 <div className="card-list">
-                    {projects.map((project) => <Card {...project} />)}
+                    {projects.map((project, i) => <Card key={i} {...project} />)}
                 </div>
             </>
         )

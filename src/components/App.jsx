@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './common/Header';
 import Card from './common/Card';
 import './app.css'
+import { ToastContainer } from 'react-toastify';
 
 const projects = [
     {
@@ -40,6 +41,7 @@ class App extends React.Component {
                         {projects.map((project, i) => <Card key={i} {...project} />)}
                     </div>
                 </div>
+                <ToastContainer />
             </>
         )
     }

@@ -2,6 +2,8 @@ import React from 'react';
 import './header.css';
 import { FaEnvelope } from 'react-icons/fa';
 import ReactTooltip from "react-tooltip";
+import { toast } from 'react-toastify';
+import "!style-loader!css-loader!react-toastify/dist/ReactToastify.css"
 
 const title = "Jeffrey Huang";
 const subtitle = "Software Developer";
@@ -24,6 +26,13 @@ class Header extends React.Component {
         el.select();
         document.execCommand('copy');
         document.body.removeChild(el);
+
+        toast.info('Copied email to clipboard', {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true
+        });
     }
 
     render() {

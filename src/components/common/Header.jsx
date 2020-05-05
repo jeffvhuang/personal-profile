@@ -4,14 +4,31 @@ import { FaEnvelope } from 'react-icons/fa';
 import ReactTooltip from "react-tooltip";
 import { toast } from 'react-toastify';
 import "!style-loader!css-loader!react-toastify/dist/ReactToastify.css"
-
-const title = "Jeffrey Huang";
-const subtitle = "Software Developer";
-const linkedin = 'https://www.linkedin.com/in/jeffvhuang/';
-const github = 'https://github.com/jeffvhuang';
-const email = 'jeffvh@outlook.com';
+import ProfileService from '../../services/profileService';
 
 class Header extends React.Component {
+    state = {
+        title: "",
+        subtitle: "",
+        linkedin: "",
+        github: "",
+        email: ""
+    }
+
+    async componentDidMount() {
+        try {
+            const details = await ProfileService.getPersonalDetails();
+            this.setState({ ...details })
+        } catch (e) {
+            toast.error('Unable to get data', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true
+            })
+        }
+    }
+
     handleEmailClick = () => {
         if (!document.queryCommandSupported('copy')) {
             return alert('Unable to copy')
@@ -19,7 +36,7 @@ class Header extends React.Component {
 
         // Create and append element to unseen part of page to copy and then remove again
         var el = document.createElement('textarea');
-        el.value = email;
+        el.value = this.state.email;
         el.setAttribute('readonly', '');
         el.style = {position: 'absolute', left: '-9999px'};
         document.body.appendChild(el);
@@ -36,6 +53,8 @@ class Header extends React.Component {
     }
 
     render() {
+        const { title, subtitle, linkedin, github, email } = this.state;
+
         return (
             <header>
                 <div className="page-header">

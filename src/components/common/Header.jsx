@@ -36,7 +36,7 @@ class Header extends React.Component {
                         >
                             <FaEnvelope size="35rem" />
                         </div>
-                        <ReactTooltip place="top" type="dark" effect="float"/>
+                        <ReactTooltip place="top" type="info" effect="float"/>
                     </div>
                 </div>
             </header>

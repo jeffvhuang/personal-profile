@@ -44,10 +44,10 @@ class Header extends React.Component {
                         <h3>{subtitle}</h3>
                     </div>
                     <div className="page-header__logos">
-                        <a href={linkedin} target="_blank" data-tip="LinkedIn">
+                        <a href={linkedin} target="_blank" data-tip="LinkedIn profile">
                             <img id="linkedin-logo" className="logo" src="../../public/images/LI-In-Bug.png" alt="LinkedIn Logo" />
                         </a>
-                        <a href={github} target="_blank" data-tip="GitHub">
+                        <a href={github} target="_blank" data-tip="GitHub profile">
                             <img id="github-mark" className="logo" src="../../public/images/GitHub-Mark-64px.png" alt="GitHub Mark" />
                         </a>
                         <div

@@ -1,5 +1,6 @@
 import React from 'react';
 import './header.css';
+import { FaEnvelope } from 'react-icons/fa';
 
 const title = "Jeffrey Huang";
 const subtitle = "Software Developer";
@@ -22,13 +23,14 @@ class Header extends React.Component {
                     </div>
                     <div className="page-header__logos">
                         <a href={linkedin} target="_blank">
-                            <img id="linkedin-logo" className="logo" src="../../public/images/LI-Logo.png" alt="LinkedIn Logo" />
+                            <img id="linkedin-logo" className="logo" src="../../public/images/LI-In-Bug.png" alt="LinkedIn Logo" />
                         </a>
                         <a href={github} target="_blank">
                             <img id="github-mark" className="logo" src="../../public/images/GitHub-Mark-64px.png" alt="GitHub Mark" />
-                            <img id="github-logo" className="logo" src="../../public/images/GitHub_Logo.png" alt="GitHub Logo" />
                         </a>
-                        <button className="email" onClick={this.handleEmailClick}>{email}</button>
+                        <div className="email logo" onClick={this.handleEmailClick}>
+                            <FaEnvelope size="35rem" />
+                        </div>
                     </div>
                 </div>
             </header>

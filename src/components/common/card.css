@@ -1,19 +1,11 @@
-.card-container {
-    margin: 5rem;
-}
-
 .card {
     width: 300rem;
     height: 350rem;
     border: 1rem solid black;
+    margin: 10rem;
     padding: 1rem;
-    margin: 0 auto;
     text-align: center;
     position: relative;
-}
-
-.card a {
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -26,45 +18,55 @@
 }
 
 .details {
-    padding: 5rem;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+}
+
+.description {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    border-bottom: 1rem solid black;
+    /* height: 50rem; */
+}
+
+.description p {
+    margin: 5rem 0;
     flex-grow: 1;
 }
 
-.details h4 {
-    margin-top: 0;
-    margin-bottom: 5rem;
+.description span {
     font-size: 20rem;
 }
 
-.details p {
-    margin: 5rem 0;
-}
-
-.details ul {
-    list-style-type: none;
-    padding: 0;
+.source-code {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.details li {
-    width: 25%;
-    margin: 0 5rem 5rem 5rem;
-    font-size: 15rem
-}
-
-.source-code a {
-    display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
-    padding: 10rem;
+    padding: 10rem 5rem 5rem 10rem;
     align-items: center;
+    height: 55rem;
 }
 
-.source-code p {
+.source-code__logo-container {
+    padding: 0 10rem;
+    margin-right: 5rem;
+}
+
+.highlights {
+    list-style-type: none;
+    padding: 5rem 0;
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.highlights li {
+    min-width: 15%;
+    padding: 0 5rem 3rem 10rem;
+    font-size: 15rem;
+    text-align: left;
 }

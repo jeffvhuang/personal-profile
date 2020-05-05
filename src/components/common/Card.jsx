@@ -13,30 +13,24 @@ Card.propTypes = {
 
 function Card({ title, imagePath, link, github, description, highlights }) {
     return (
-        <div className="card-container">
-            <div className="card">
-                 <a href={link} target="_blank">
-                    <div>
-                        <img className="project-image" src={imagePath} alt="Project Image" target="_blank" />  
-                    </div>
-                    <div className="details">
-                        <h4>{title}</h4>
-                        <p>{description}</p>
-                        {highlights.length > 0 && (
-                            <ul>
-                                {highlights.map((highlight, i) => <li key={i}>{highlight}</li>)}
-                            </ul>
-                        )}
-                    </div>
+        <div className="card">
+            <a href={link} target="_blank">
+                <img className="project-image" src={imagePath} alt="Project Image" target="_blank" />  
+            </a>
+            <div className="details">
+                <a href={link} target="_blank" className="description">
+                    <p><span>{title}</span> - {description}</p>
                 </a>
-            </div>
-            <div className="source-code">
-                <a href={github} target="_blank">
-                    <div>
+                <a href={github} target="_blank" className="source-code">
+                    <div className="source-code__logo-container">
                         <img className="logo" src="../../public/images/GitHub-Mark-64px.png" alt="LinkedIn Logo" />
                     </div>
-                    <p>Source Code</p>
-                </a>  
+                    {highlights.length > 0 && (
+                        <ul className="highlights">
+                            {highlights.map((highlight, i) => <li key={i}>{highlight}</li>)}
+                        </ul>
+                    )}
+                </a>
             </div>
         </div>
     )

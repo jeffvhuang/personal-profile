@@ -11,7 +11,19 @@ const email = 'jeffvh@outlook.com';
 
 class Header extends React.Component {
     handleEmailClick = () => {
-        console.log(email);
+        if (!document.queryCommandSupported('copy')) {
+            return alert('Unable to copy')
+        }
+
+        // Create and append element to unseen part of page to copy and then remove again
+        var el = document.createElement('textarea');
+        el.value = email;
+        el.setAttribute('readonly', '');
+        el.style = {position: 'absolute', left: '-9999px'};
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
     }
 
     render() {

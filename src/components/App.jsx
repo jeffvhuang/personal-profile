@@ -11,7 +11,7 @@ const projects = [
         link: 'https://jeffvh-lets-chat.herokuapp.com/',
         github: 'https://github.com/jeffvhuang/lets-chat',
         description: 'Real time chat application',
-        highlights: ['Node.js', 'Express.js', 'Socket.io']
+        highlights: ['Node.js', 'Express', 'Socket.io']
     },
     {
         title: 'Task Manager',
@@ -19,7 +19,7 @@ const projects = [
         link: 'https://jeffvh-task-manager.herokuapp.com',
         github: 'https://github.com/jeffvhuang/task-manager',
         description: 'API for task management',
-        highlights: ['Node.js', 'Express.js', 'MongoDB']
+        highlights: ['Node.js', 'Express', 'MongoDB']
     },
     {
         title: 'Recaura',

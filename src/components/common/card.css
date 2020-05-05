@@ -29,9 +29,7 @@
     display: block;
 }
 
-.project-image-container:hover ~ .description,
-.project-image-container:hover,
-.description:hover {
+.project-image-container:hover {
     transition: all 0.2s ease-out;
     box-shadow: 4rem 4rem 8rem rgba(20, 20, 20, 0.5);
     background: white;
@@ -98,6 +96,10 @@
 .source-code__logo-container {
     padding: 0 10rem;
     margin-right: 5rem;
+}
+
+.card-logo {
+    height: 35rem;
 }
 
 .highlights {

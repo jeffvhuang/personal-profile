@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './common/Header';
 import Card from './common/Card';
+import './app.css'
 
 const projects = [
     {
@@ -12,7 +13,7 @@ const projects = [
         highlights: ['Node.js', 'Express.js', 'Socket.io']
     },
     {
-        title: 'Task Manager API',
+        title: 'Task Manager',
         imagePath: '../public/images/project-management.jpg',
         link: 'https://jeffvh-task-manager.herokuapp.com',
         github: 'https://github.com/jeffvhuang/task-manager',

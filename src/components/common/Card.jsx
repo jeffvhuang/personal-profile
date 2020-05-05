@@ -13,11 +13,11 @@ Card.propTypes = {
 
 function Card({ title, imagePath, link, github, description, highlights }) {
     return (
-        <div>
+        <div className="card-container">
             <div className="card">
                  <a href={link} target="_blank">
                     <img className="project-image" src={imagePath} alt="Project Image" target="_blank" />
-                    <div>
+                    <div className="details">
                         <h4>{title}</h4>
                         <p>{description}</p>
                         {highlights.length > 0 && (

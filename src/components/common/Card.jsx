@@ -14,7 +14,7 @@ Card.propTypes = {
 function Card({ title, imagePath, link, github, description, highlights }) {
     return (
         <div className="card">
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" className="project-image-container">
                 <img className="project-image" src={imagePath} alt="Project Image" target="_blank" />  
             </a>
             <div className="details">

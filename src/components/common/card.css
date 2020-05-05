@@ -1,20 +1,31 @@
 .card {
     width: 300rem;
-    height: 350rem;
-    border: 1rem solid black;
+    height: 320rem;
+    border: 1rem solid #B3B3B3;
     margin: 10rem;
-    padding: 1rem;
+    padding: .5rem;
     text-align: center;
     position: relative;
     display: flex;
     flex-direction: column;
+    border-radius: 10rem;
+}
+
+.card:hover {
+    transition: all 0.2s ease-out;
+    border: 1px solid black;
 }
 
 .project-image {
-    height: 200rem;
+    height: 180rem;
     width: 300rem;
-    border-bottom: 1.5rem solid black;
     z-index: -1;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+}
+
+.description:hover {
+    background-color: white;
 }
 
 .details {
@@ -23,14 +34,29 @@
     flex-direction: column;
 }
 
-.description {
-    padding: 5rem;
+.details a {
+    padding: 5rem 10rem 5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
-    border-bottom: 1rem solid black;
-    /* height: 50rem; */
+}
+
+.description {
+    border-bottom: 1rem solid #B3B3B3;
+}
+
+.description__main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0 5rem;
+}
+
+.description h4 {
+  font-size: 20rem;
+  margin: 0; 
 }
 
 .description p {
@@ -38,16 +64,30 @@
     flex-grow: 1;
 }
 
-.description span {
-    font-size: 20rem;
+.arrow {
+    width: 20rem;
+    padding: 5rem 0;
+    text-align: center;
 }
 
 .source-code {
+    flex-grow: 1;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+}
+
+.source-code__main {
     display: flex;
     flex-direction: row;
-    padding: 10rem 5rem 5rem 10rem;
+    justify-content: space-between;
+    padding: 5rem;
     align-items: center;
-    height: 55rem;
+}
+
+.source-code:hover {
+    background-color: white;
+    /* transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(20, 20, 20, 0.5); */
 }
 
 .source-code__logo-container {
@@ -66,7 +106,7 @@
 
 .highlights li {
     min-width: 15%;
-    padding: 0 5rem 3rem 10rem;
+    padding: 0 5rem 0rem 10rem;
     font-size: 15rem;
     text-align: left;
 }

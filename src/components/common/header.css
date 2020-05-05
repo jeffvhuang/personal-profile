@@ -36,7 +36,13 @@ header {
 .logo, 
 .email {
     height: 35rem;
-    padding: 0 20rem;
+    margin: 0 20rem;
+}
+
+.logo:hover {
+    /* transition: all 0.2s ease-out;
+    box-shadow: 4rem 4rem 8rem rgba(20, 20, 20, 0.5); */
+    opacity: 0.6
 }
 
 .email {

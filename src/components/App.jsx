@@ -35,8 +35,10 @@ class App extends React.Component {
         return (
             <>
                 <Header />
-                <div className="card-list">
-                    {projects.map((project, i) => <Card key={i} {...project} />)}
+                <div className="main">
+                    <div className="card-list">
+                        {projects.map((project, i) => <Card key={i} {...project} />)}
+                    </div>
                 </div>
             </>
         )

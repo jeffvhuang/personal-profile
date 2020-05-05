@@ -12,6 +12,12 @@
     position: relative;
 }
 
+.card a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .project-image {
     height: 200rem;
     width: 300rem;
@@ -21,6 +27,10 @@
 
 .details {
     padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
 }
 
 .details h4 {
@@ -30,11 +40,31 @@
 }
 
 .details p {
-    margin: 0;
+    margin: 5rem 0;
 }
 
 .details ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.details li {
+    width: 25%;
+    margin: 0 5rem 5rem 5rem;
+    font-size: 15rem
+}
+
+.source-code a {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 10rem;
+    align-items: center;
+}
+
+.source-code p {
     display: flex;
 }

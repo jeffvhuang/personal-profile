@@ -16,7 +16,9 @@ function Card({ title, imagePath, link, github, description, highlights }) {
         <div className="card-container">
             <div className="card">
                  <a href={link} target="_blank">
-                    <img className="project-image" src={imagePath} alt="Project Image" target="_blank" />
+                    <div>
+                        <img className="project-image" src={imagePath} alt="Project Image" target="_blank" />  
+                    </div>
                     <div className="details">
                         <h4>{title}</h4>
                         <p>{description}</p>
@@ -28,10 +30,14 @@ function Card({ title, imagePath, link, github, description, highlights }) {
                     </div>
                 </a>
             </div>
-            <a href={github} target="_blank">
-                <img className="logo" src="../../public/images/GitHub-Mark-64px.png" alt="LinkedIn Logo" />
-                <p>Source Code</p>
-            </a>
+            <div className="source-code">
+                <a href={github} target="_blank">
+                    <div>
+                        <img className="logo" src="../../public/images/GitHub-Mark-64px.png" alt="LinkedIn Logo" />
+                    </div>
+                    <p>Source Code</p>
+                </a>  
+            </div>
         </div>
     )
 }

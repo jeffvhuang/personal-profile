@@ -1,6 +1,7 @@
 import React from 'react';
 import { string, array } from 'prop-types';
 import './card.css'
+import GitHubIcon from '../../../public/images/GitHub-Mark-64px.png';
 
 Card.propTypes = {
     title: string,
@@ -27,7 +28,7 @@ function Card({ title, imagePath, link, github, description, highlights }) {
             <a href={github} target="_blank" className="source-code details-section">
                 <div className="source-code__main">
                     <div className="source-code__logo-container">
-                        <img className="card-logo" src="../../public/images/GitHub-Mark-64px.png" alt="LinkedIn Logo" />
+                        <img className="card-logo" src={GitHubIcon} alt="GitHub Logo" />
                     </div>
                     {highlights.length > 0 && (
                         <ul className="highlights">

@@ -5,6 +5,8 @@ import ReactTooltip from "react-tooltip";
 import { toast } from 'react-toastify';
 import "!style-loader!css-loader!react-toastify/dist/ReactToastify.css"
 import ProfileService from '../../services/profileService';
+import LinkedInIcon from '../../../public/images/LI-In-Bug.png';
+import GitHubIcon from '../../../public/images/GitHub-Mark-64px.png';
 
 class Header extends React.Component {
     state = {
@@ -64,10 +66,10 @@ class Header extends React.Component {
                     </div>
                     <div className="page-header__logos">
                         <a href={linkedin} target="_blank" data-tip="LinkedIn profile">
-                            <img id="linkedin-logo" className="logo" src="../../public/images/LI-In-Bug.png" alt="LinkedIn Logo" />
+                            <img id="linkedin-logo" className="logo" src={LinkedInIcon} alt="LinkedIn Logo" />
                         </a>
                         <a href={github} target="_blank" data-tip="GitHub profile">
-                            <img id="github-mark" className="logo" src="../../public/images/GitHub-Mark-64px.png" alt="GitHub Mark" />
+                            <img id="github-mark" className="logo" src={GitHubIcon} alt="GitHub Mark" />
                         </a>
                         <div
                             className="email logo"

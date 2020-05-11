@@ -12,7 +12,7 @@ const projects = [
         imagePath: '../../public/images/project-management.jpg',
         link: 'https://jeffvh-task-manager.herokuapp.com',
         github: 'https://github.com/jeffvhuang/task-manager',
-        description: 'API for task management',
+        description: 'Task management application',
         highlights: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB']
     },
     {

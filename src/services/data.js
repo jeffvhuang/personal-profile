@@ -8,12 +8,12 @@ const details = {
 
 const projects = [
     {
-        title: 'Lets Chat',
-        imagePath: '../../public/images/chat-bubbles.jpg',
-        link: 'https://jeffvh-lets-chat.herokuapp.com/',
-        github: 'https://github.com/jeffvhuang/lets-chat',
-        description: 'Real time chat application',
-        highlights: ['Node.js', 'Express', 'Socket.io']
+        title: 'PT Files',
+        imagePath: '../../public/images/digital-hand.jpg',
+        link: 'http://ptfiles-env.eba-rm3yrkqs.ap-southeast-2.elasticbeanstalk.com',
+        github: 'https://github.com/jeffvhuang/pt-files',
+        description: 'Physiotherapy management software',
+        highlights: ['TypeScript', 'React', 'Redux', '.NET Core', 'SQL', 'AWS']
     },
     {
         title: 'Task Manager',
@@ -24,12 +24,12 @@ const projects = [
         highlights: ['Node.js', 'Express', 'MongoDB']
     },
     {
-        title: 'Recaura',
-        imagePath: '../../public/images/digital-hand.jpg',
-        link: '',
-        github: 'https://github.com/jeffvhuang/Recaura',
-        description: 'Physiotherapy management software',
-        highlights: ['React', 'Redux', '.NET Core', 'SQL', 'Docker']
+        title: 'Lets Chat',
+        imagePath: '../../public/images/chat-bubbles.jpg',
+        link: 'https://jeffvh-lets-chat.herokuapp.com/',
+        github: 'https://github.com/jeffvhuang/lets-chat',
+        description: 'Real time chat application',
+        highlights: ['Node.js', 'Express', 'Socket.io']
     }
 ]
 

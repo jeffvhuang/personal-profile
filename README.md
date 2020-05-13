@@ -23,7 +23,7 @@ An online profile with links to projects, appropriate social media and public co
 
 Heroku CLI will need to be installed to use the following method:
 
-1. Ensure changes are merged to master branch and a build is run (follow Build instructions above)
+1. Ensure changes are merged to master branch
 2. `git push heroku master`
 
 ## Authors

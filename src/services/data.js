@@ -18,7 +18,7 @@ const projects = [
     {
         title: 'PT Files',
         imagePath: '../../public/images/digital-hand.jpg',
-        link: 'http://ptfiles-env.eba-rm3yrkqs.ap-southeast-2.elasticbeanstalk.com',
+        link: 'https://ptfiles.app',
         github: 'https://github.com/jeffvhuang/pt-files',
         description: 'Physiotherapy management software',
         highlights: ['TypeScript', 'React', 'Redux', '.NET Core', 'SQL', 'AWS']

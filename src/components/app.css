@@ -1,16 +1,16 @@
 .main {
-    max-width: 1080px;
-    margin: 0 auto;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .card-list {
-    display: flex;
-    padding: 30rem;
-    flex-wrap: wrap;
-    justify-content: space-evenly
+  display: flex;
+  padding: 30rem 40rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }

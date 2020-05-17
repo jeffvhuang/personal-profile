@@ -87,6 +87,7 @@
   align-items: center;
   border-bottom-left-radius: 10rem;
   border-bottom-right-radius: 10rem;
+  min-height: 65rem;
 }
 
 .source-code__main {

@@ -29,3 +29,7 @@ Heroku CLI will need to be installed to use the following method:
 ## Authors
 
 Jeffrey Huang - jeffvh@outlook.com
+
+## References
+
+Photos from [Free Range Stock](freerangestock.com)

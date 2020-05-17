@@ -21,10 +21,14 @@
   border: 1px solid black;
 }
 
-.project-image-container,
-.project-image {
+.project-image-container {
   border-top-left-radius: 10rem;
   border-top-right-radius: 10rem;
+}
+
+.project-image {
+  border-top-left-radius: 9rem;
+  border-top-right-radius: 9rem;
 }
 
 .project-image {

@@ -18,14 +18,16 @@ const projects = [
     title: titles.recaura,
     link: 'https://www.recaura.com',
     github: 'https://github.com/jeffvhuang/Recaura',
-    description: 'Physiotherapy note-taking application',
+    description:
+      'Note-taking app for health professionals. Test login: user@example.com, PW: testpw123',
     highlights: ['TypeScript', 'React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'Docker', 'AWS']
   },
   {
     title: titles.task,
     link: 'https://jeffvh-task-manager.herokuapp.com',
     github: 'https://github.com/jeffvhuang/task-manager',
-    description: 'Simple task checklist application',
+    description:
+      'Simple task checklist application. Test login: testuser@example.com, PW: Test123$',
     highlights: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'Heroku']
   },
   {

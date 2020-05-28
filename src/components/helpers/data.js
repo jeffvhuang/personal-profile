@@ -12,7 +12,7 @@ const titles = {
   ptfiles: 'PT Files',
   chat: 'Lets Chat',
   gameon: 'Game On Client',
-  gameonapi: 'Game On Api'
+  gameonapi: 'Game On API'
 };
 
 const projects = [
@@ -35,7 +35,8 @@ const projects = [
     title: titles.ptfiles,
     link: 'https://ptfiles.app',
     github: 'https://github.com/jeffvhuang/pt-files',
-    description: 'Refactored Recaura project for different tech stack and architecture',
+    description:
+      'Simplified physiotherapy record management app to demonstrate .NET Core with clean architecture',
     highlights: [
       'TypeScript',
       'React',

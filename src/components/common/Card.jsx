@@ -2,6 +2,7 @@ import React from 'react';
 import { string, array } from 'prop-types';
 import './card.css';
 import GitHubIcon from '../../../public/images/GitHub-Mark-64px.png';
+import { titles } from '../helpers/data';
 
 Card.propTypes = {
   title: string,
@@ -13,11 +14,15 @@ Card.propTypes = {
 };
 
 function Card({ title, imagePath, link, github, description, highlights }) {
+  let projectImgContainerClasses = 'project-image-container';
+  if (title == titles.chat) projectImgContainerClasses += ' project-chat-container';
   return (
     <div className="card-container">
       <div className="card">
-        <a href={link} target="_blank" className="project-image-container">
-          <img className="project-image" src={imagePath} alt="Project Image" target="_blank" />
+        <a href={link} target="_blank" className="project-link">
+          <div className={projectImgContainerClasses}>
+            <img className="project-image" src={imagePath} alt="Project Image" target="_blank" />
+          </div>
           <div className="description details-section">
             <div className="description__main">
               <h4>{title}</h4>

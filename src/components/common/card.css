@@ -20,9 +20,18 @@
   /* border: 1px solid black; */
 }
 
-.project-image-container {
+.project-link {
   border-top-left-radius: 10rem;
   border-top-right-radius: 10rem;
+}
+
+.project-image-container {
+  border-top-left-radius: 9rem;
+  border-top-right-radius: 9rem;
+}
+
+.project-chat-container {
+  padding-right: 0.015rem;
 }
 
 .project-image {
@@ -32,12 +41,12 @@
 
 .project-image {
   height: 180rem;
-  width: 300rem;
+  width: 100%;
   z-index: -1;
   display: block;
 }
 
-.project-image-container:hover {
+.project-link:hover {
   transition: all 0.2s ease-out;
   box-shadow: 4rem 4rem 8rem rgba(20, 20, 20, 0.5);
   background: white;

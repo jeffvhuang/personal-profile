@@ -10,7 +10,9 @@ const titles = {
   recaura: 'Recaura',
   task: 'Task Manager',
   ptfiles: 'PT Files',
-  chat: 'Lets Chat'
+  chat: 'Lets Chat',
+  gameon: 'Game On Client',
+  gameonapi: 'Game On Api'
 };
 
 const projects = [
@@ -20,7 +22,7 @@ const projects = [
     github: 'https://github.com/jeffvhuang/Recaura',
     description:
       'Note-taking app for health professionals. Test login: user@example.com, PW: testpw123',
-    highlights: ['TypeScript', 'React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'Docker', 'AWS']
+    highlights: ['TypeScript', 'React', 'Redux', 'Node.js', 'Express', 'NoSQL', 'Docker', 'AWS']
   },
   {
     title: titles.task,
@@ -28,7 +30,7 @@ const projects = [
     github: 'https://github.com/jeffvhuang/task-manager',
     description:
       'Simple task checklist application. Test login: testuser@example.com, PW: Test123$',
-    highlights: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'Heroku']
+    highlights: ['React', 'Redux', 'Node.js', 'Express', 'NoSQL', 'Heroku']
   },
   {
     title: titles.ptfiles,
@@ -52,6 +54,20 @@ const projects = [
     github: 'https://github.com/jeffvhuang/lets-chat',
     description: 'Real time chat application',
     highlights: ['Node.js', 'Express', 'Socket.io', 'Heroku']
+  },
+  {
+    title: titles.gameon,
+    link: 'https://github.com/jeffvhuang/game-on',
+    github: 'https://github.com/jeffvhuang/game-on',
+    description: 'Client UI to view recent and upcoming sports tournaments and matches',
+    highlights: ['TypeScript', 'React', 'Redux', 'Sass']
+  },
+  {
+    title: titles.gameonapi,
+    link: 'https://github.com/jeffvhuang/game-on-api',
+    github: 'https://github.com/jeffvhuang/game-on-api',
+    description: 'API to obtain data for select sports and e-sports',
+    highlights: ['.NET Core', 'NoSQL', 'Three-Tier Architecture']
   }
 ];
 

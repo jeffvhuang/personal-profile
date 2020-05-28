@@ -9,6 +9,8 @@ import letsChatImg from '../../public/images/speech-bubbles.jpg';
 import taskManagerImg from '../../public/images/project-mgmt.jpg';
 import recauraImg from '../../public/images/digital-hand.jpg';
 import ptfilesImg from '../../public/images/medical-tech.jpg';
+import gameonImg from '../../public/images/bball-game.jpg';
+import gameonApiImg from '../../public/images/bball-words.jpg';
 
 class App extends React.Component {
   state = {
@@ -42,6 +44,10 @@ class App extends React.Component {
         return letsChatImg;
       case titles.ptfiles:
         return ptfilesImg;
+      case titles.gameon:
+        return gameonImg;
+      case titles.gameonapi:
+        return gameonApiImg;
       default:
         return '';
     }

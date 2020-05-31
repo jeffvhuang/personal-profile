@@ -43,9 +43,9 @@ const projects = [
       'Redux',
       '.NET Core',
       'SQL',
-      'AWS',
+      'Docker',
       'Clean Architecture',
-      'CQRS'
+      'AWS'
     ]
   },
   {

@@ -25,13 +25,6 @@ const projects = [
     highlights: ['TypeScript', 'React', 'Redux', 'Node.js', 'Express', 'NoSQL', 'Docker', 'AWS']
   },
   {
-    title: titles.task,
-    link: 'https://jeffvh-task-manager.herokuapp.com',
-    github: 'https://github.com/jeffvhuang/task-manager',
-    description: 'Simple task checklist application. (Login: testuser@example.com & PW: Test123$)',
-    highlights: ['React', 'Redux', 'Node.js', 'Express', 'NoSQL', 'Heroku']
-  },
-  {
     title: titles.ptfiles,
     link: 'https://ptfiles.app',
     github: 'https://github.com/jeffvhuang/pt-files',
@@ -47,6 +40,13 @@ const projects = [
       'Clean Architecture',
       'AWS'
     ]
+  },
+  {
+    title: titles.task,
+    link: 'https://jeffvh-task-manager.herokuapp.com',
+    github: 'https://github.com/jeffvhuang/task-manager',
+    description: 'Simple task checklist application. (Login: testuser@example.com & PW: Test123$)',
+    highlights: ['React', 'Redux', 'Node.js', 'Express', 'NoSQL', 'Heroku']
   },
   {
     title: titles.chat,

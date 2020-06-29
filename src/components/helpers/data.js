@@ -1,6 +1,6 @@
 const details = {
   title: 'Jeffrey Huang',
-  subtitle: 'Software Developer',
+  subtitle: 'Software Engineer',
   linkedin: 'https://www.linkedin.com/in/jeffvhuang/',
   github: 'https://github.com/jeffvhuang',
   email: 'jeffvh@outlook.com'
@@ -26,7 +26,8 @@ const projects = [
   },
   {
     title: titles.ptfiles,
-    link: 'https://ptfiles.app',
+    // link: 'https://ptfiles.app',
+    link: 'https://github.com/jeffvhuang/pt-files',
     github: 'https://github.com/jeffvhuang/pt-files',
     description:
       'Simplified physiotherapy record management app to demonstrate .NET Core with clean architecture',

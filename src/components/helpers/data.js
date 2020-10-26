@@ -18,10 +18,12 @@ const titles = {
 const projects = [
   {
     title: titles.recaura,
-    link: 'https://www.recaura.com',
+    // link: 'https://www.recaura.com',
+    link: 'https://github.com/jeffvhuang/Recaura',
     github: 'https://github.com/jeffvhuang/Recaura',
     description:
-      'Note-taking app for health professionals. (Login: user@example.com & PW: testpw123)',
+      'Note-taking app for health professionals.',
+      // 'Note-taking app for health professionals. (Login: user@example.com & PW: testpw123)',
     highlights: ['TypeScript', 'React', 'Redux', 'Node.js', 'Express', 'NoSQL', 'Docker', 'AWS']
   },
   {
